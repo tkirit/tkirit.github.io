@@ -1,62 +1,45 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
-	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);
-}
-
 .container {
-	max-width: 390px;
+  max-width: 390px;
+  margin: 0 auto; /* Добавить автоматические отступы по бокам для центрирования контейнера */
 }
 
 .inner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  gap: 10px; /* Добавить промежуток между элементами */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
 }
 
 .img {
-	width: 150px;
+  max-width: 100%; /* Адаптивная ширина изображения внутри .img */
+  height: auto;
+  display: block; /* Убедиться, что изображение находится внутри блока .img */
+  margin: 0 auto; /* Центрирование изображения внутри блока .img */
 }
 
 .item {
-	text-align: center;
+  text-align: center;
 }
 
 .btn {
-	display: inline-block;
-	padding: 10px 20px;
-	border: none;
-	background: rgb(248, 168, 24);
-	border-radius: 10px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-
-	transition: background .2s linear;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(248, 168, 24);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background .2s linear;
+  margin-top: 10px; /* Отступ между изображением и кнопкой */
 }
 
 .btn:hover {
-	background: lightgreen;
+  background: lightgreen;
 }
 
 .usercard {
-	text-align: center;
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
